@@ -1,0 +1,169 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Mchat</title>
+    </head>
+    <body>
+        
+        <div class="app">
+            
+            <div class="screen" id="login-screen">
+                <form action="#">
+                    <h2>User Information</h2>
+                    <input type="name" placeholder="name">
+                    <input type="date" id="birthdate" name="birthdate">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#chatlist-screen" class="btn1" type="submit">Login</a>
+                </form>
+                <br><br><br><br>
+                <p>not a user? <a href="#register-screen">Create an Account -Mchat</a></p>
+
+                <div class="copyRight">powered by <a href="   abut.html" style="color: #703EFF">Mchat</a></div>
+            </div>
+
+            <div class="screen" id="register-screen">
+                <form action="#">
+                    <div class="profile-pic">
+                        <input type="file" name="" id="" style="display: none;">
+                    </div>
+						<input type="text" placeholder="Username">
+						<input type="password" placeholder="Password">
+						<input type="password" placeholder="Confirm-password">
+						<input type="email" placeholder="Email">
+						<a href="#chatlist-screen" class="btn1" type="submit">Register</a>
+                </form>
+                <br><br><br><br>
+                <p>have a account? <a href="#login-screen">login</a></p>
+                <div class="copyRight">powered by <a href="abut.html" style="color: #703EFF">Mchat</a></div>
+            </div>
+
+            <div class="screen" id="statar-screen">
+                <div class="top-section">
+                    <img src="images/avater.jpg" style="width: 160px; height: 160px;" alt="">
+                </div>
+                <div class="bottom-section">
+                    <h1> Maa Computer Institute of Technology</h1>
+                    <p>Sonargaon Freelancing / Outsourcing Training Centre</p>
+                    <h3>Advanced Web Design and Development
+                        Android Application Design and Development</h3>
+                    <a href="#login-screen" class="btn1">Get started</a>
+                    <div class="copyRight">powered by <a href="abut.html" style="color: #703EFF">Mchat</a></div>
+                </div>
+            </div>
+
+            <div class="screen" id="chatlist-screen">
+                <div class="header">
+                        <!--<a href=""><i class="fa-solid fa-arrow-left"></i></a>-->
+                        <div class="searchBox">
+							<span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Search message">
+                        </div>
+                </div>
+                <div class="main-content">
+                    <!--<div class="item">
+                        <div class="left-section">
+                            <div class="user-avater">
+                            <img src="images/sarif.jpg" alt="#">
+                            </div>
+                            <div>
+                                <h3>SARIF VAY ${i}</h3>
+                                <p class="lastms">apnar practice koy?</p>
+                            </div>
+                        </div>
+                        <div class="right-section">
+                            <p class="time">5:07PM</p>
+                            <div class="unread">5</div>
+                        </div>
+                        
+                    </div> -->
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="#statar-screen"><i class="fa-solid fa-earth"></i></a>
+                        <a  class="active" href="#chatlist-screen"><i class="fa-solid fa-message"></i></a>
+                    </div>
+                    <div>
+                        <a href="#profile-screen"><i class="fa-solid fa-earth"></i></a>
+                        <a href="setting-screen"><i class="fa-solid fa-cog"></i></a>
+                    </div>
+                    <a class="add-icon" href="#settings-screen"><i class="fa-solid fa-plus"></i></a>
+                </div>
+            </div>
+
+            <div class="screen" id="single-screen">
+            <div class="header">
+                <div>
+                <a href="#chatlist-screen" ><i class="fa-solid fa-arrow-left"></i></a>
+                <div class="item">
+                    <div class="left-section">
+                    <div class="user-avater">
+                        <img src="images/sarif.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>SARIF VAY</h3>
+                        <p class="lastms">online</p>
+                    </div>
+                    </div>   
+                </div>
+                </div>
+				<div style="font-size: 25px;">
+                    <a href="#statar-screen" style="color: #ccc;"><i class="fa-solid fa-video"></i></a>
+                    <a  class="active" href="#chatlist-screen" style="color: #ccc;"><i class="fa-solid fa-phone"></i></a>
+                </div>
+			</div>
+			
+            <div class="main-content">
+                <div class="item sender">
+				    <div class="messages">
+				        <p>hi,Rhul amin! any update today?</p>
+				    </div>
+                        <p class="time">5:13pm</p>
+                </div>
+                
+                <div class="item reciver">
+					<div class="messages">
+                        <img src="images/sarif.jpg" width="100" alt="">
+					    <p>all good!we hebe some update</p>
+					</div>
+                        <p class="time">5:13pm</p>
+                </div>
+                <div class="item sender">
+				    <div class="messages">
+				        <p>hi,Rhul what is the Computer programming?</p>
+				    </div>
+                        <p class="time">5:13pm</p>
+                </div>
+
+                <div class="item reciver">
+					<div class="messages">
+                        <img src="images/sarif.jpg" width="100" alt="">
+					    <p>Computer programming is the process of performing particular computations, usually by designing and building executable computer programs. Programming involves tasks such as analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms.</p>
+					</div>
+                        <p class="time">5:13pm</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="inputform">
+                    <input type="text" placeholder="Type here...">
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </span>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="index.js"></script>
+
+    </body>
+    </html>
